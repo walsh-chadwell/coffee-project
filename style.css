@@ -43,6 +43,10 @@ img {
     width: 50%;
 }
 
+.img-container {
+    max-width: 1200px;
+}
+
 @media screen and (max-width: 575px) {
     .coffee-box {
         flex-basis: 50%;
