@@ -8,3 +8,19 @@ td, th {
     padding: 5px 10px;
 }
 
+body {
+    background-color: rgb(150, 114, 85);
+}
+
+h2 {
+
+}
+
+.coffee-box {
+    flex-basis: 33%;
+}
+
+p {
+    margin: 0;
+    color: lightgray;
+}

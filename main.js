@@ -2,8 +2,10 @@
 
 function renderCoffee(coffee) {
     var html = '';
+    html += "<div class='d-flex coffee-box justify-content-center align-items-center'>"
     html += '<h2>' + coffee.name + '</h2>';
-    html += '<p>' + coffee.roast + '</p>';
+    html += '<p class="ml-2">' + coffee.roast + '</p>';
+    html += "</div>"
 
     return html;
 }

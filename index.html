@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <h1>Coffee!</h1>
+<body class="container-fluid d-flex flex-column justify-content-center">
+    <h1 class="text-center">Coffee!</h1>
 
-    <form>
+    <form class="d-flex justify-content-center">
         <input type="text" id="name-selection">
         <label for="roast-selection"></label>
         <select id="roast-selection">
@@ -20,8 +21,8 @@
         <input id="submit" type="submit" />
     </form>
 
-    <h1>Add a Coffee!</h1>
-    <form>
+    <h1 class="text-center">Add a Coffee!</h1>
+    <form class="d-flex justify-content-center">
         <input type="text" id="new-name">
         <label for="new-name"></label>
         <select id="new-roast">
@@ -32,8 +33,7 @@
         <input id="submit-new" type="submit" />
     </form>
 
-    <div id="coffees">
-
+    <div id="coffees" class="d-flex flex-wrap align-items-center mt-5">
     </div>
 
     <script src="main.js"></script>
