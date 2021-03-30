@@ -22,6 +22,11 @@ function updateCoffees(e) {
     var selectedName = nameSelection.value.toLowerCase();
     var filteredCoffees = [];
     coffees.forEach(function(coffee) {
+        if (selectedRoast === "all") {
+            if (coffee.name.toLowerCase().includes(selectedName)) {
+                filteredCoffees.push(coffee);
+            }
+        }
         if (coffee.roast === selectedRoast && coffee.name.toLowerCase().includes(selectedName)) {
             filteredCoffees.push(coffee);
         }
