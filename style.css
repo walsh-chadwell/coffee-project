@@ -13,7 +13,8 @@ body {
 }
 
 h2 {
-
+    font-family: 'Dela Gothic One', cursive;
+    font-size: 25px;
 }
 
 .coffee-box {
@@ -23,4 +24,16 @@ h2 {
 p {
     margin: 0;
     color: lightgray;
+    font-family: Cochin;
+    border: solid white;
+    border-radius: 10%;
+    padding: 0 5px 0 5px;
+}
+
+h1 {
+    font-family: 'Dela Gothic One', cursive;
+}
+
+.jumbotron {
+    background-color: rgb(196,180,145);
 }
