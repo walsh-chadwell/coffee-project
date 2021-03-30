@@ -56,3 +56,5 @@ var nameSelection = document.querySelector('#name-selection');
 coffeeDiv.innerHTML = renderCoffees(coffees);
 
 submitButton.addEventListener('click', updateCoffees);
+nameSelection.addEventListener("input", updateCoffees);
+roastSelection.addEventListener("change", updateCoffees);
