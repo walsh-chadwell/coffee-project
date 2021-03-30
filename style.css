@@ -37,3 +37,22 @@ h1 {
 .jumbotron {
     background-color: rgb(196,180,145);
 }
+
+img {
+    border: 5px solid white;
+    width: 50%;
+}
+
+@media screen and (max-width: 575px) {
+    .coffee-box {
+        flex-basis: 50%;
+    }
+    h2 {
+        font-size: 17px;
+    }
+    input, select {
+        max-width: 33%;
+    }
+}
+
+
