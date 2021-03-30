@@ -79,3 +79,4 @@ submitButton.addEventListener('click', updateCoffees);
 nameSelection.addEventListener("input", updateCoffees);
 roastSelection.addEventListener("change", updateCoffees);
 submitNew.addEventListener('click', addCoffee);
+submitNew.addEventListener('click', updateCoffees);
