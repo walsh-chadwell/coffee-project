@@ -34,6 +34,18 @@ function updateCoffees(e) {
     coffeeDiv.innerHTML = renderCoffees(filteredCoffees);
 }
 
+function addCoffee(e) {
+    e.preventDefault(); // don't submit the form, we just want to update the data
+    console.log(newName.value);
+    coffees.push({
+        id: coffees.length + 1,
+        name: newName.value,
+        roast: newRoast.value
+    });
+    console.log(coffees);
+    renderCoffees(coffees);
+}
+
 // from http://www.ncausa.org/About-Coffee/Coffee-Roasts-Guide
 var coffees = [
     {id: 1, name: 'Light City', roast: 'light'},
@@ -49,13 +61,16 @@ var coffees = [
     {id: 11, name: 'Espresso', roast: 'dark'},
     {id: 12, name: 'Viennese', roast: 'dark'},
     {id: 13, name: 'Italian', roast: 'dark'},
-    {id: 14, name: 'French', roast: 'dark'},
+    {id: 14, name: 'French', roast: 'dark'}
 ];
 
 var coffeeDiv = document.querySelector('#coffees');
 var submitButton = document.querySelector('#submit');
 var roastSelection = document.querySelector('#roast-selection');
 var nameSelection = document.querySelector('#name-selection');
+var newName = document.querySelector("#new-name");
+var newRoast = document.querySelector("#new-roast");
+var submitNew = document.querySelector("#submit-new");
 
 
 coffeeDiv.innerHTML = renderCoffees(coffees);
@@ -63,3 +78,4 @@ coffeeDiv.innerHTML = renderCoffees(coffees);
 submitButton.addEventListener('click', updateCoffees);
 nameSelection.addEventListener("input", updateCoffees);
 roastSelection.addEventListener("change", updateCoffees);
+submitNew.addEventListener('click', addCoffee);
