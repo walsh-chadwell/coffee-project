@@ -43,19 +43,32 @@ img {
     width: 50%;
 }
 
-@media screen and (max-width: 575px) {
+.img-container {
+    max-width: 1200px;
+}
+
+@media screen and (max-width: 580px) {
+    .coffee-box {
+        flex-basis: 100%;
+    }
+    h2 {
+        font-size: 28px;
+    }
+}
+
+@media screen and (min-width:581px) and (max-width: 800px) {
     .coffee-box {
         flex-basis: 50%;
     }
     h2 {
-        font-size: 17px;
+        font-size: 27px;
     }
     input, select {
         max-width: 33%;
     }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1250px) {
     .coffee-box {
         flex-basis: 25%;
     }
@@ -67,6 +80,12 @@ img {
     }
     p {
         font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 1700px) {
+    h2 {
+        font-size: 32px;
     }
 }
 
