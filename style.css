@@ -89,4 +89,10 @@ img {
     }
 }
 
+@media screen and (min-width: 1700px) {
+    h2 {
+        font-size: 32px;
+    }
+}
+
 
