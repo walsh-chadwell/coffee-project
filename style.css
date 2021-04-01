@@ -54,6 +54,9 @@ img {
     h2 {
         font-size: 28px;
     }
+    input, select {
+        max-width: 33%;
+    }
 }
 
 @media screen and (min-width:581px) and (max-width: 800px) {
